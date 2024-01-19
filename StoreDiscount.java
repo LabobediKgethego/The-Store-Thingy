@@ -1,14 +1,23 @@
-public class MyClass {
-    public static void main(String args[]) {
-      int x=10;
-      int y=25;
-      int z=x+y;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
 
-      System.out.println("Sum of x+y = " + z);
-    }
-} 0;
-      
-      Scanner enterUserName = new Scanner(System.in);
+public class Main {
+     static int rows;
+     static double totalSum;
+     public static void main(String args[]) {
+      //int x=10;
+      //int y=25;
+      //int z=x+y;
+     
+
+      //System.out.println("Sum of x+y = " + z);
+      buySomething();
+   
+       }
+       public static void buySomething()
+       {
+       Scanner enterUserName = new Scanner(System.in);
       System.out.println("Enter username:");
       String userName = enterUserName.nextLine(); 
       System.out.println("HEY "+userName.toUpperCase()+" Buy Something, press corresponding number to buy, e.g press 1 to buy Apple");
@@ -89,6 +98,9 @@ public class MyClass {
           System.out.println("Total After Customer Discount: $"+newTotalSum);
 
       }
+
+       }
+       
+} 
       
-    }
-}
+     
